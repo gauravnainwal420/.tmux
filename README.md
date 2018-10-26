@@ -31,7 +31,7 @@ Then proceed to [customize] your `~/.tmux.conf.local` copy.
 If you're a Vim user, setting the `$EDITOR` environment variable to `vim` will
 enable and further customize the vi-style key bindings (see tmux manual).
 
-If you're new to tmux, I recommmend you read [tmux 2: Productive Mouse-Free
+If you're new to tmux, I recommend you read [tmux 2: Productive Mouse-Free
 Development][bhtmux2] by [@bphogan].
 
 [bhtmux2]: https://pragprog.com/book/bhtmux2/tmux-2
@@ -53,7 +53,7 @@ Troubleshooting
    a version of glibc that didn't (glibc `< 2.26`). You may also configure
    `LC_CTYPE` to use an `UTF-8` locale. Typically VTE based terminal emulators
    rely on glib's `g_unichar_iswide()` function while tmux relies on glibc's
-   `wcwidth()` function. When these two functions disagree, display gets messed
+   `wcwidth()` function. When these two functions disagree, the display gets messed
    up.
 
    This can also happen on macOS when using iTerm2 and "Use Unicode version 9
@@ -115,7 +115,7 @@ Features
 The "maximize any pane to a new window with `<prefix> +`" feature is different
 from builtin `resize-pane -Z` as it allows you to further split a maximized
 pane. It's also more flexible by allowing you to maximize a pane to a new
-window, then change window, then go back and the pane is still in maximized
+window, then change window, then go back and the pane is still in the maximized
 state in its own window. You can then minimize a pane by using `<prefix> +`
 either from the source window or the maximized window.
 
@@ -177,8 +177,8 @@ Bindings for `copy-mode-vi`:
 
 - `v` begins selection / visual mode
 - `C-v` toggles between blockwise visual mode and visual mode
-- `H` jumps to the start of line
-- `L` jumps to the end of line
+- `H` jumps to the start of the line
+- `L` jumps to the end of the line
 - `y` copies the selection to the top paste-buffer
 - `Escape` cancels the current operation
 
@@ -191,7 +191,7 @@ and diverging from upstream, the proper way is to edit the `~/.tmux.conf.local`
 file.
 
 Please refer to the default `~/.tmux.conf.local` file to know more about
-variables you can adjust to alter different behaviors. Pressing `<prefix> e`
+variables you can adjust to alter different behaviours. Pressing `<prefix> e`
 will open `~/.tmux.conf.local` with the editor defined by the `$EDITOR`
 environment variable (defaults to `vim` when empty).
 
@@ -304,7 +304,7 @@ limitations:
 To get Unicode symbols displayed properly, you have to use [font linking].
 Open `regedit.exe` then navigate to the registry key at
 `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\FontLink\SystemLink`
-and add a new entry for you preferred font to link it with the Segoe UI Symbol
+and add a new entry for your preferred font to link it with the Segoe UI Symbol
 font.
 
 ![regedit](https://cloud.githubusercontent.com/assets/553208/19741304/71a2f3ae-9bc0-11e6-96aa-4c09a812c313.png)
